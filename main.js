@@ -31,7 +31,15 @@ let main = function() {
 		});
 	});
 
+	// console.log(groups[0]);
+	// let stud = groups[0].pickRandom();
+	// console.log(stud);
+	// groups[0].drop(stud);
+	// console.log(groups[0]);
 	// Compute points by group
-	console.log(groups.map(group => group.points()));
+	//console.log(groups.map(group => group.points()));
 }
 main();
+
+
+// haven't tested points computation completedly

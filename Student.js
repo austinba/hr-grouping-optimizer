@@ -17,7 +17,7 @@ class Student {
 		if(this.preferences.likes.indexOf(student.name) >= 0) points += 1;
 		if(this.preferences.dislikesPers.indexOf(student.name) >= 0) points -= 2;
 		if(this.preferences.dislikesTech.indexOf(student.name) >= 0) points -= 2;
-		if(this.preferences.previousPairs.indexOf(student.name) >= 0) points -= 0.25;
+		if(this.preferences.previousPairs.indexOf(student.name) >= 0) points -= 0.5;
 		// console.log(' ', points);
 		return points;
 	}

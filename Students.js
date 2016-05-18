@@ -9,6 +9,18 @@ class Students {
 		this._length++;
 		return this.students[student.name] = student;
 	}
+	drop(student) {
+		this._length--;
+		delete this.students[student.name];
+		return student;
+	}
+	pickRandom() {
+		return this.students[
+		  Object.keys(this.students)[
+		    Math.floor(Object.keys(this.students).length * Math.random())
+		  ]
+		];
+	}
 	each(callback) {
 		for(let name in this.students) {
 			callback(this.students[name], name);
