@@ -19,6 +19,11 @@ class Students {
 		this.each(student => arr.push(student));
 		return arr;
 	}
+	namesToArray() {
+		const arr = [];
+		this.each((student, name) => arr.push(name));
+		return arr;
+	}
 	get length() {
 		return this._length;
 	}
