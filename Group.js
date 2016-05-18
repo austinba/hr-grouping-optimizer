@@ -1,6 +1,7 @@
 'use strict';
 const Students = require('./Students');
 const Student = require('./Student');
+const util = require('./util');
 
 class Group extends Students{
 	constructor() {
@@ -19,8 +20,10 @@ class Group extends Students{
 		});
 		return points;
 	}
+	toString() {
+		return util.formatStringLen('Points(' + this.points() + ')', 15) + '|| ' + super.toString();
+	}
 }
-
 module.exports = Group;
 // let group = new Group();
 // group.add(new Student('amy'));

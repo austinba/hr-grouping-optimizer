@@ -11,10 +11,13 @@ let main = function() {
 
 	// Create a list of students with randomized preferences
 	const students = new Students();
-	util.range(studentCount).forEach((val) => 
+	util.loop(studentCount, val => 
 		students.add(new Student('Student ' + val)));
 	students.each(student =>
 		student.generateRandomPreferences(studentCount, groupSize, 10, students));
+
+	console.log('Class with random preferences generated:')
+	console.log(students.toString());
 
 	// Create groups
 	const groups = [];
@@ -31,6 +34,10 @@ let main = function() {
 		});
 	});
 
+	console.log('\n');
+	console.log('Groups assigned randomly:');
+	groups.forEach((group, index) => 
+		console.log(util.formatStringLen('Group ' + index + ':', 11), group.toString()));
 	// console.log(groups[0]);
 	// let stud = groups[0].pickRandom();
 	// console.log(stud);

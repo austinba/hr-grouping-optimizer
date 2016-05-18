@@ -1,4 +1,5 @@
 'use strict';
+const util = require('./util');
 
 class Students {
 	constructor() {
@@ -35,6 +36,18 @@ class Students {
 		const arr = [];
 		this.each((student, name) => arr.push(name));
 		return arr;
+	}
+	toString() {
+		const colWidth = 12;
+		const cols = 5;
+		let i = 0;
+		let str = '';
+		this.each((student,name) => {
+			str += util.formatStringLen(name, colWidth)
+			str += i === this.length-1 ? '' : ((i+1) % cols === 0 ? '\n' : ' | ');
+			i++;
+		})
+		return str;
 	}
 	get length() {
 		return this._length;
