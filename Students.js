@@ -15,12 +15,27 @@ class Students {
 		delete this.students[student.name];
 		return student;
 	}
-	pickRandom() {
-		return this.students[
-		  Object.keys(this.students)[
-		    Math.floor(Object.keys(this.students).length * Math.random())
-		  ]
-		];
+	duplicate() {
+		const students = new this.constructor();
+		this.each(student => students.add(student));
+		return students;
+	}
+	// pickRandom() {
+	// 	return this.students[
+	// 	  Object.keys(this.students)[
+	// 	    Math.floor(Object.keys(this.students).length * Math.random())
+	// 	  ]
+	// 	];
+	// }
+	pick(count) { // returns an array of n randomly selected students
+		const results = [];
+		let students = this.toArray();
+		console.log(students.length);
+		util.loop(count, () => {
+			results.push(util.dropRandomItemFromArray(students));
+			console.log(students.length);
+		});
+		return results;
 	}
 	each(callback) {
 		for(let name in this.students) {
