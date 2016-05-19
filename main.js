@@ -35,32 +35,12 @@ let main = function() {
 		});
 	});
 
-	// let grp = new Group();
-	// grp.add(new Student('austin'));
-	// grp.add(new Student('ben'));
-	// let grp2 = new Group();
-	// grp2.add(new Student('jordan'));
-	// grp2.add(new Student('carl'));
-	// let grp3 = new Group();
-	// grp3.add(new Student('toby'));
-	// grp3.add(new Student('mac'));
 
-	// let grps = new Groups();
-	// grps.add(grp);
-	// grps.add(grp2);
-	// grps.add(grp3);
-	// console.log(grps.pick(1));
-	// console.log('\n');
-	// console.log('Groups assigned randomly:');
-	// groups.each((group, index) => 
-	// console.log(util.formatStringLen('Group ' + index + ':', 11), group.toString()));
-	// console.log('Total Points in Starting Config:', groups.points());
-	// let stud = groups[0].pickRandom();
-	// console.log(stud);
-	// groups[0].drop(stud);
-	// console.log(groups[0]);
-	// Compute points by group
-	//console.log(groups.map(group => group.points()));
+	console.log('\nGroups assigned randomly:');
+	groups.each((group, index) => 
+	console.log(util.formatStringLen('Group ' + index + ':', 11), group.toString()));
+	console.log('Total Points in Starting Config:', groups.points());
+
 }
 main();
 

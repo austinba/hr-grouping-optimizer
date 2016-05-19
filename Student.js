@@ -12,15 +12,6 @@ class Student {
 			previousPairs: []
 		};
 	}
-	pointsWhenGroupedWith(student) {
-		let points = 0;
-		if(this.preferences.likes.indexOf(student.name) >= 0) points += 1;
-		if(this.preferences.dislikesPers.indexOf(student.name) >= 0) points -= 2;
-		if(this.preferences.dislikesTech.indexOf(student.name) >= 0) points -= 2;
-		if(this.preferences.previousPairs.indexOf(student.name) >= 0) points -= 0.5;
-		// console.log(' ', points);
-		return points;
-	}
 	generateRandomPreferences(classSize, countPrevPairs, maxPrefListSize, students) {
 		const setPreferencesFromStudentList = prefs => {
 			const unassignedStudents = students.namesToArray();
@@ -29,14 +20,16 @@ class Student {
 		  	const listsize = category[1];
 		  	// TODO: pick from a list of students, prevent repicks
 		  	this.preferences[cat] = util.range(listsize).map(() =>
-		  		unassignedStudents.splice(util.randInt(unassignedStudents.length), 1)[0]);
+		  		util.dropRandomItemFromArray(unassignedStudents));
 		  }); 
 		};
+		// choose likes, personal dislikes, and technical dislikes from same student set
 		setPreferencesFromStudentList(
 			[['likes', util.randInt(maxPrefListSize+1)],
 		 	 ['dislikesPers', util.randInt(maxPrefListSize+1)], 
 		 	 ['dislikesTech', util.randInt(maxPrefListSize+1)]]
 		);
+		// choose previous pairs from different dataset
 		setPreferencesFromStudentList([['previousPairs', countPrevPairs]]);
 		return this;
 	}
