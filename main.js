@@ -1,12 +1,13 @@
 'use strict';
 const util = require('./util');
 const objFn = require('./objectiveFunction');
+const parse = require('./parseGroupings');
 
 // Optimization Parameters
 const startTemp = 350;    // Default: 350
 const endTemp = 5;        // Default: 5
 const iterations = 100000;  // Default: 100000
-const runCount = 1;      // Default: 10
+const runCount = 3;      // Default: 10
 
 // Other Parameters
 const students = require('./exampleStudentLists/relaxed.json')
@@ -16,13 +17,12 @@ const groupSize = 4;
 const main = function(runCount, students, groupSize) {
 	let groupingOptions = [];
 	for(let i=0; i<runCount; i++) {
-		console.log('Generating Grouping Option #' + i)
+		console.log('Generating Grouping Option (' + (i+1) + ' of ' + runCount + ')');
 		groupingOptions.push(optimizer(students, groupSize));
 		console.log('\n');
 	}
 	groupingOptions = groupingOptions.sort((groupingA, groupingB) => objFn.forAGrouping(groupingA)<objFn.forAGrouping(groupingB));
-	console.log('Points:', groupingOptions.map(grouping => objFn.forAGrouping(grouping)));
-	console.log(JSON.stringify(groupingOptions[0]));
+	parse.allGroupings(groupingOptions);
 }
 
 // OPTIMIZER inputs: 'students' array of preferences and 'groupSize'
@@ -38,7 +38,7 @@ const optimizer = function(students, groupSize) {
 	const decrement = Math.exp(Math.log(startTemp / endTemp) / iterations);
 
 	// Loop while randomly swapping students and decreasing temperature (represents probability of taking a sub-optimal swap)
-	process.stdout.write('Current Best Score:  ');
+	process.stdout.write('Current Best Score (@ Temperature):  ');
 	for(let i=0; i<iterations; i++) {
 		const currentTemp = startTemp / Math.pow(decrement, i);
 		randomlySwapTwoStudentsFromDifferentGroups(grouping, currentTemp);
