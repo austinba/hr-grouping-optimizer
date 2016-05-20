@@ -19,7 +19,7 @@ const forAGroup = function(group) {
 	});
 	return points;
 }
-const forAGroupConfig = function(groupsArray) {
+const forAGrouping = function(groupsArray) {
 	let points = 0;
 	groupsArray.forEach(group => {
 		points += this.forAGroup(group);
@@ -29,4 +29,4 @@ const forAGroupConfig = function(groupsArray) {
 
 exports.forAStudentTowardAGroup = forAStudentTowardAGroup;
 exports.forAGroup = forAGroup;
-exports.forAGroupConfig = forAGroupConfig;
+exports.forAGrouping = forAGrouping;
