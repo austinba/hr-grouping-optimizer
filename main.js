@@ -2,13 +2,13 @@
 const util = require('./util');
 const objFn = require('./objectiveFunction');
 
-// Annealing Parameters
+// Optimization Parameters
 const startTemp = 350;    // Default: 350
 const endTemp = 5;        // Default: 5
 const iterations = 1000;  // Default: 100000
 const runCount = 10;      // Default: 10
 
-
+// Other Parameters
 const students = require('./exampleStudentLists/relaxed.json')
 const groupSize = 4;
 
