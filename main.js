@@ -5,8 +5,8 @@ const objFn = require('./objectiveFunction');
 // Optimization Parameters
 const startTemp = 350;    // Default: 350
 const endTemp = 5;        // Default: 5
-const iterations = 1000;  // Default: 100000
-const runCount = 10;      // Default: 10
+const iterations = 100000;  // Default: 100000
+const runCount = 1;      // Default: 10
 
 // Other Parameters
 const students = require('./exampleStudentLists/relaxed.json')
@@ -22,7 +22,7 @@ const main = function(runCount, students, groupSize) {
 	}
 	groupingOptions = groupingOptions.sort((groupingA, groupingB) => objFn.forAGrouping(groupingA)<objFn.forAGrouping(groupingB));
 	console.log('Points:', groupingOptions.map(grouping => objFn.forAGrouping(grouping)));
-	console.log(groupingOptions);
+	console.log(JSON.stringify(groupingOptions[0]));
 }
 
 // OPTIMIZER inputs: 'students' array of preferences and 'groupSize'
