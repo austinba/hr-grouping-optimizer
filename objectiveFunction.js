@@ -1,13 +1,19 @@
 'use strict';
 const util = require('./util');
+
+const pointsForLike = 1;             // Default: 1
+const pointsForDislikePers = -2;     // Default: -2
+const pointsForDislikeTech = -2;     // Default: -2
+const pointsForPreviousPairs = -0.5; // Default: -0.5
+
 const forAStudentTowardAGroup = function(student, group) {
 	let points = 0;
 	util.forEachDefined(group, otherStudent => {
 		if(otherStudent !== undefined && student !== otherStudent) {
-			if(student.likes.indexOf(otherStudent.id) >= 0) points += 1;
-			if(student.dislikesPers.indexOf(otherStudent.id) >= 0) points -= 2;
-			if(student.dislikesTech.indexOf(otherStudent.id) >= 0) points -= 2;
-			if(student.previousPairs.indexOf(otherStudent.id) >= 0) points -= 0.5;
+			if(student.likes.indexOf(otherStudent.id) >= 0) points += pointsForLike;
+			if(student.dislikesPers.indexOf(otherStudent.id) >= 0) points += pointsForDislikePers;
+			if(student.dislikesTech.indexOf(otherStudent.id) >= 0) points += pointsForDislikeTech;
+			if(student.previousPairs.indexOf(otherStudent.id) >= 0) points += pointsForPreviousPairs;
 		}
 	});
 	return points;

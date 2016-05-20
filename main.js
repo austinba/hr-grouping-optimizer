@@ -8,10 +8,10 @@ const students = require('./exampleStudentLists/average.json')
 const groupSize = 4;
 
 // Optimization Parameters
-const startTemp = 350;    // Default: 350
-const endTemp = 5;        // Default: 5
+const startTemp = 350;      // Default: 350
+const endTemp = 5;          // Default: 5
 const iterations = 100000;  // Default: 100000
-const runCount = 3;      // Default: 10
+const runCount = 3;         // Default: 3
 
 // MAIN runs the optimizer multiple times to create a set of groupings to choose from
 const main = function(runCount, students, groupSize) {
