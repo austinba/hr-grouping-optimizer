@@ -1,37 +1,41 @@
 'use strict';
 const util = require('./util');
 const objFn = require('./objectiveFunction');
-const students = require('./exampleStudentLists/1.json')
+const students = require('./exampleStudentLists/relaxed.json')
+
+let _incTemps = [];  // used only to 
+// annealing parameters: optimize these by checking at what temperatures bests are being hit
+const startTemp = 3.5;
+const endTemp = .05;
+const iterations = 100000;
 const groupSize = 4;
 
-// annealing parameters
-const startTemp = 1000;
-const endTemp = 0.1;
-const k = 1;
-const iterations = 100000;
+// OPTIMIZER
+const optimizer = function() {
+	// Start with a completely randomized group configuration
+  const groupConfig = randomizeGroupConfig(students);
 
-const main2 = function() {
-  const groupConfig = randomizeGroupConfig(students); // Group Configuration: listing of all groups and contained students groupConfig[group][student]
-
-  // optimization loop
+  // Initialize variables for annealing / optimization
 	let bestConfig = util.deepCopyArray(groupConfig);
 	let bestScore = objFn.forAGroupConfig(bestConfig);
+	const decrement = Math.exp(Math.log(startTemp / endTemp) / iterations);
 
-	let currentTemp = startTemp;
-	const decrement = (startTemp - endTemp) / iterations;
 	for(let i=0; i<iterations; i++) {
-		// test a random student swap
-		randomlySwapTwoStudentsFromDifferentGroups(groupConfig, Math.exp(-k/currentTemp));
-		currentTemp -= decrement;
+		const currentTemp = startTemp / Math.pow(decrement, i);
+		randomlySwapTwoStudentsFromDifferentGroups(groupConfig, currentTemp);
+		const score = objFn.forAGroupConfig(groupConfig);
 
-		let score = objFn.forAGroupConfig(groupConfig);
-		if(score > bestScore) { // check if this is the best score so far
+		// Save best scoring group configuration
+		if(score > bestScore) {
 			bestScore = score;
 			bestConfig = util.deepCopyArray(groupConfig);
-			console.log(score+0.1, Math.exp(-k/currentTemp));
-		}
+			_incTemps.push(currentTemp);
+			console.log(score, currentTemp);
+		} 
 	}
-	return(bestScore);
+	// For Optimizing Annealing Parameters: Output temperatures where improvements happened
+	// console.log(JSON.stringify(__incTemps))
+	return bestScore;
 };
 
 const randomizeGroupConfig = function(students) {
@@ -50,7 +54,7 @@ const randomizeGroupConfig = function(students) {
 	return groupConfiguration;
 }
 
-const randomlySwapTwoStudentsFromDifferentGroups = function(groupConfiguration, probOfKeepingWorseResult) {
+const randomlySwapTwoStudentsFromDifferentGroups = function(groupConfiguration, currentTemp) {
 	const groupCount = groupConfiguration.length;
 	const group1 = util.randInt(groupCount);
 	let group2 = util.randInt(groupCount - 1);
@@ -67,19 +71,22 @@ const randomlySwapTwoStudentsFromDifferentGroups = function(groupConfiguration, 
 	groupConfiguration[group1][student1] = groupConfiguration[group2][student2];
   groupConfiguration[group2][student2] = temp;
 
+
   // check points in both groups
 	const newCasePoints = objFn.forAGroup(groupConfiguration[group1]) +
 		                     objFn.forAGroup(groupConfiguration[group2]);
 
   // unswap if not desired
-  if (newCasePoints < baseCasePoints && Math.random() < probOfKeepingWorseResult) {
+  if (newCasePoints < baseCasePoints && // keep all where better
+  	  Math.random() > Math.exp(-(baseCasePoints-newCasePoints)/currentTemp)) // keep sometimes when worse, depending on how much worse and temperature
+  {
 		let temp = groupConfiguration[group1][student1];
-		groupConfiguration[group1][student1] = groupConfiguration[group2][student2];
-	  groupConfiguration[group2][student2] = temp;  	
+	  groupConfiguration[group1][student1] = groupConfiguration[group2][student2];
+		groupConfiguration[group2][student2] = temp;  	
   }
 }
 
-main2();
+optimizer();
 
 // let res = util.range(50).map(() => main2());
 // console.log(res);
