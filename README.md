@@ -1,5 +1,17 @@
 # Team Grouping Optimizer
-This is an optimizer for grouping students based on preferences.  This uses a simulated annealing algorithm.
+This script optimizes students into learning groups based on preferences and anti-preferences, and renders the result in a visually appealing format.
+
+## Run
+```
+node main.js
+```
+The output table requires >106 columns for correct formatting, so expand the bash window as necessary. Or send output to a file.
+
+```
+node main.js > output
+```
+
+
 
 ## Files
 * **main.js** -- Application entry point
@@ -23,9 +35,11 @@ const iterations = 100000;  // Default: 100000
 const runCount = 3;         // Default: 3
 ```
 
-Update **students** to require the JSON file containing preferences of the students in the cohort.
+**students** refers to the the JSON file, which contains the list of students and their preferences.  Format instructions are listed under *Input*.
 
-Adjust the other parameters as necessary. Start and end temperatures (For simulated annealing) are optimized for the objective function weightings described above. Optimization was done by bracketing temperatures observed to generate the most advances in points for groupings.
+**groupSize** refers to the maximum group size (odd-one-out groups may have n-1 group sizee)
+
+**Optimization Parameters** These are optimized for the objective function weightings used in the example. Optimization can be refreshed by running an expanded temperature range on a dataset, and noting the temperature range where the most point jumps occur.
 
 
 ### objectiveFunction.js
