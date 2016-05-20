@@ -1,5 +1,4 @@
 'use strict';
-const grouping = require('./exampleGrouping1.json');
 const objFn = require('./objectiveFunction');
 const util = require('./util.js');
 const columnWidth = 16;
@@ -30,7 +29,7 @@ const parseGrouping = function(grouping) {
 		group.forEach((student, i) => {
 			const row = [];
 			if(i === 0) {
-				row.push(' Group ' + groupID);
+				row.push('Group ' + groupID);
 			} else if (i === 1) {
 				row.push('(' + objFn.forAGroup(group) + ' Points)');
 			} else {

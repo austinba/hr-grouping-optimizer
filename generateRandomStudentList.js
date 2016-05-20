@@ -2,6 +2,11 @@
 const util = require('./util');
 const groupSize = 4;
 const classSize = 70;
+const numPreviousPairs = 12;
+const maxLikes = 10;
+const maxDislikesPers = 8;
+const maxDislikesTech = 8;
+
 
 const generateRandomPreferences = function() {
 	// Generate students list with random preferences (replace with import)
@@ -13,10 +18,10 @@ const generateRandomPreferences = function() {
 		let unassignedStudents = studentIds.slice();
 		const thisStudentId = unassignedStudents.indexOf(student.id);
 		if(thisStudentId>=0) unassignedStudents.splice(thisStudentId,1); // don't pick current student
-		student.previousPairs = util.dropNRandomItemsFromArray(unassignedStudents.slice(), 12); // prev pair can be on other lists
-		student.likes = util.dropNRandomItemsFromArray(unassignedStudents, util.randInt(8));
-		student.dislikesPers = util.dropNRandomItemsFromArray(unassignedStudents, util.randInt(12));
-		student.dislikesTech = util.dropNRandomItemsFromArray(unassignedStudents, util.randInt(12));
+		student.previousPairs = util.dropNRandomItemsFromArray(unassignedStudents.slice(), numPreviousPairs); // prev pair can be on other lists
+		student.likes = util.dropNRandomItemsFromArray(unassignedStudents, util.randInt(maxLikes));
+		student.dislikesPers = util.dropNRandomItemsFromArray(unassignedStudents, util.randInt(maxDislikesPers));
+		student.dislikesTech = util.dropNRandomItemsFromArray(unassignedStudents, util.randInt(maxDislikesTech));
 	})
 	return studentPrefs;
 };
