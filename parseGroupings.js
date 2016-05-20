@@ -11,8 +11,8 @@ const parseAllGroupingOptions = function(groupingOptions) {
 	console.log('+==========================================================================================================================+\n');
 	groupingOptions.forEach((grouping, i) => {
 		console.log('============================================================================================================================');
-		console.log('================================================= Group ' + util.formatStringLen(i+1, 2) + 
-			'(' + util.formatStringLen(objFn.forAGrouping(grouping)+0.0001, 4) + ' Points) ====================================================');
+		console.log('=============================================== Grouping ' + util.formatStringLen(i+1, 2) + 
+			'(' + util.formatStringLen(objFn.forAGrouping(grouping)+0.0001, 4) + ' Points) ===================================================');
 		console.log(parseGrouping(grouping));
 	console.log('============================================================================================================================\n\n');
 	});
