@@ -1,0 +1,1974 @@
+[
+  {
+    "id": 0,
+    "name": "Student 0",
+    "previousPairs": [
+      42,
+      55,
+      63,
+      52,
+      39
+    ],
+    "likes": [
+      12,
+      14
+    ],
+    "dislikesPers": [
+      20,
+      66,
+      1
+    ],
+    "dislikesTech": [
+      43,
+      23,
+      31
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Student 1",
+    "previousPairs": [
+      20,
+      63,
+      21
+    ],
+    "likes": [
+      42,
+      43,
+      8
+    ],
+    "dislikesPers": [
+      49,
+      47,
+      19
+    ],
+    "dislikesTech": []
+  },
+  {
+    "id": 2,
+    "name": "Student 2",
+    "previousPairs": [
+      7,
+      30,
+      65,
+      68,
+      48,
+      34
+    ],
+    "likes": [
+      45,
+      46,
+      64,
+      33
+    ],
+    "dislikesPers": [
+      44,
+      29,
+      4
+    ],
+    "dislikesTech": [
+      38,
+      18
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Student 3",
+    "previousPairs": [
+      2,
+      68,
+      61,
+      52
+    ],
+    "likes": [
+      57,
+      16
+    ],
+    "dislikesPers": [
+      47,
+      53,
+      0,
+      6,
+      21,
+      5,
+      27
+    ],
+    "dislikesTech": [
+      64
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Student 4",
+    "previousPairs": [
+      19,
+      63
+    ],
+    "likes": [
+      7,
+      40,
+      28,
+      9,
+      38,
+      18,
+      16,
+      58,
+      51,
+      52
+    ],
+    "dislikesPers": [],
+    "dislikesTech": []
+  },
+  {
+    "id": 5,
+    "name": "Student 5",
+    "previousPairs": [
+      68,
+      24,
+      35,
+      34,
+      8,
+      16,
+      55,
+      19,
+      66,
+      28
+    ],
+    "likes": [
+      11
+    ],
+    "dislikesPers": [],
+    "dislikesTech": []
+  },
+  {
+    "id": 6,
+    "name": "Student 6",
+    "previousPairs": [
+      2,
+      49,
+      26,
+      37,
+      36,
+      31,
+      12,
+      60,
+      43,
+      21
+    ],
+    "likes": [
+      29,
+      32,
+      54,
+      9,
+      22,
+      16,
+      42
+    ],
+    "dislikesPers": [],
+    "dislikesTech": [
+      45,
+      8,
+      69,
+      38,
+      31
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Student 7",
+    "previousPairs": [
+      6,
+      35,
+      15,
+      57,
+      1
+    ],
+    "likes": [
+      49,
+      54,
+      41,
+      24,
+      68,
+      46,
+      12,
+      2
+    ],
+    "dislikesPers": [
+      28
+    ],
+    "dislikesTech": [
+      42,
+      51,
+      64,
+      63
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Student 8",
+    "previousPairs": [
+      37,
+      40,
+      5,
+      26,
+      53,
+      49
+    ],
+    "likes": [
+      63,
+      36,
+      69,
+      10,
+      11,
+      16,
+      51
+    ],
+    "dislikesPers": [],
+    "dislikesTech": [
+      12,
+      39,
+      60,
+      57,
+      2,
+      43
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Student 9",
+    "previousPairs": [
+      62,
+      66
+    ],
+    "likes": [
+      39,
+      8,
+      3,
+      28,
+      0,
+      65,
+      60,
+      54
+    ],
+    "dislikesPers": [
+      45,
+      15,
+      29,
+      26,
+      30,
+      44,
+      35
+    ],
+    "dislikesTech": [
+      2,
+      33,
+      67,
+      47,
+      12,
+      69,
+      27
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Student 10",
+    "previousPairs": [
+      2,
+      36,
+      0,
+      38,
+      6,
+      29
+    ],
+    "likes": [
+      8,
+      66,
+      17,
+      11
+    ],
+    "dislikesPers": [
+      32,
+      16
+    ],
+    "dislikesTech": [
+      58,
+      68,
+      26,
+      55,
+      57,
+      13
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Student 11",
+    "previousPairs": [
+      53,
+      28,
+      0,
+      12,
+      54,
+      13,
+      57,
+      15
+    ],
+    "likes": [
+      48,
+      29,
+      49,
+      67,
+      36,
+      2,
+      15,
+      1,
+      33,
+      20
+    ],
+    "dislikesPers": [],
+    "dislikesTech": [
+      41,
+      61,
+      66,
+      40,
+      50
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Student 12",
+    "previousPairs": [
+      17,
+      5,
+      4,
+      58,
+      61,
+      19,
+      27,
+      53
+    ],
+    "likes": [
+      43,
+      61,
+      54
+    ],
+    "dislikesPers": [
+      15,
+      49,
+      37,
+      53,
+      30
+    ],
+    "dislikesTech": []
+  },
+  {
+    "id": 13,
+    "name": "Student 13",
+    "previousPairs": [
+      46,
+      61,
+      30
+    ],
+    "likes": [
+      34
+    ],
+    "dislikesPers": [
+      22,
+      64,
+      40,
+      6,
+      52
+    ],
+    "dislikesTech": [
+      39
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Student 14",
+    "previousPairs": [
+      58,
+      62
+    ],
+    "likes": [
+      61,
+      38,
+      22
+    ],
+    "dislikesPers": [
+      44
+    ],
+    "dislikesTech": [
+      49,
+      12,
+      50,
+      60
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Student 15",
+    "previousPairs": [
+      27,
+      5,
+      63,
+      66,
+      53,
+      46
+    ],
+    "likes": [
+      65,
+      58,
+      27,
+      9,
+      26,
+      1,
+      11,
+      7
+    ],
+    "dislikesPers": [
+      45,
+      3,
+      35,
+      63,
+      32,
+      52
+    ],
+    "dislikesTech": [
+      49,
+      13,
+      46
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Student 16",
+    "previousPairs": [
+      45,
+      50,
+      41,
+      35,
+      63,
+      59
+    ],
+    "likes": [
+      47,
+      63,
+      23,
+      11,
+      41
+    ],
+    "dislikesPers": [],
+    "dislikesTech": [
+      20,
+      40,
+      4,
+      13,
+      28,
+      36,
+      8
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Student 17",
+    "previousPairs": [
+      66,
+      48,
+      39,
+      10,
+      55
+    ],
+    "likes": [],
+    "dislikesPers": [
+      46,
+      33,
+      60,
+      6,
+      32,
+      19
+    ],
+    "dislikesTech": [
+      16,
+      37,
+      43,
+      34,
+      49,
+      11
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Student 18",
+    "previousPairs": [
+      15,
+      12
+    ],
+    "likes": [
+      11,
+      0,
+      67
+    ],
+    "dislikesPers": [
+      1,
+      24,
+      39,
+      69
+    ],
+    "dislikesTech": [
+      22
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Student 19",
+    "previousPairs": [
+      34,
+      51,
+      9,
+      66,
+      48,
+      43
+    ],
+    "likes": [
+      34,
+      36,
+      68,
+      35,
+      58,
+      53,
+      25
+    ],
+    "dislikesPers": [
+      5,
+      55,
+      9,
+      32
+    ],
+    "dislikesTech": [
+      60,
+      51,
+      18
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Student 20",
+    "previousPairs": [
+      23,
+      62,
+      7,
+      32,
+      64,
+      10
+    ],
+    "likes": [
+      65,
+      4,
+      29,
+      56,
+      12,
+      30,
+      13,
+      22,
+      46,
+      47
+    ],
+    "dislikesPers": [],
+    "dislikesTech": [
+      54,
+      2
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Student 21",
+    "previousPairs": [
+      36,
+      52,
+      47,
+      15,
+      34
+    ],
+    "likes": [
+      40,
+      50,
+      17,
+      57,
+      43,
+      28,
+      25
+    ],
+    "dislikesPers": [
+      0,
+      51,
+      20,
+      24,
+      10
+    ],
+    "dislikesTech": [
+      29,
+      27,
+      44,
+      18,
+      14
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Student 22",
+    "previousPairs": [
+      50,
+      54,
+      37
+    ],
+    "likes": [
+      36,
+      60,
+      14,
+      46,
+      25,
+      37,
+      35,
+      24,
+      28,
+      15
+    ],
+    "dislikesPers": [
+      45,
+      12,
+      11
+    ],
+    "dislikesTech": []
+  },
+  {
+    "id": 23,
+    "name": "Student 23",
+    "previousPairs": [],
+    "likes": [
+      29,
+      16
+    ],
+    "dislikesPers": [
+      10,
+      67
+    ],
+    "dislikesTech": [
+      15
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Student 24",
+    "previousPairs": [
+      3,
+      18,
+      64,
+      10,
+      25,
+      60,
+      2,
+      62
+    ],
+    "likes": [
+      23,
+      56,
+      33,
+      63,
+      67,
+      47,
+      50,
+      55,
+      10,
+      62
+    ],
+    "dislikesPers": [],
+    "dislikesTech": []
+  },
+  {
+    "id": 25,
+    "name": "Student 25",
+    "previousPairs": [
+      48,
+      31,
+      7,
+      3,
+      27
+    ],
+    "likes": [],
+    "dislikesPers": [
+      48,
+      65,
+      53,
+      47,
+      21
+    ],
+    "dislikesTech": [
+      56,
+      17
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Student 26",
+    "previousPairs": [
+      5,
+      21,
+      51
+    ],
+    "likes": [
+      66,
+      30,
+      48,
+      16,
+      32
+    ],
+    "dislikesPers": [
+      42,
+      33,
+      49,
+      2,
+      21,
+      64
+    ],
+    "dislikesTech": [
+      38
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Student 27",
+    "previousPairs": [
+      51,
+      26,
+      62
+    ],
+    "likes": [
+      11,
+      41,
+      28,
+      48,
+      67,
+      62,
+      34,
+      47,
+      35,
+      42
+    ],
+    "dislikesPers": [
+      0
+    ],
+    "dislikesTech": [
+      37,
+      33,
+      46
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Student 28",
+    "previousPairs": [
+      13,
+      40,
+      1,
+      15,
+      10,
+      64,
+      29
+    ],
+    "likes": [
+      66,
+      19,
+      45,
+      31,
+      61,
+      14,
+      23,
+      6,
+      13,
+      43
+    ],
+    "dislikesPers": [
+      30,
+      52,
+      33,
+      36,
+      41,
+      17
+    ],
+    "dislikesTech": []
+  },
+  {
+    "id": 29,
+    "name": "Student 29",
+    "previousPairs": [],
+    "likes": [
+      7,
+      40,
+      21,
+      41,
+      68,
+      2,
+      50,
+      49
+    ],
+    "dislikesPers": [
+      32,
+      58,
+      18,
+      20,
+      39,
+      36
+    ],
+    "dislikesTech": [
+      52,
+      60,
+      53,
+      69,
+      15,
+      65,
+      51
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Student 30",
+    "previousPairs": [
+      26,
+      69,
+      55,
+      54,
+      13,
+      62,
+      4
+    ],
+    "likes": [
+      32,
+      21,
+      18,
+      7,
+      0,
+      44,
+      69,
+      49,
+      27
+    ],
+    "dislikesPers": [],
+    "dislikesTech": [
+      46,
+      35,
+      8,
+      56,
+      37,
+      62
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Student 31",
+    "previousPairs": [
+      21,
+      56,
+      42,
+      15,
+      59,
+      35,
+      46
+    ],
+    "likes": [
+      10,
+      68,
+      42
+    ],
+    "dislikesPers": [
+      2,
+      1
+    ],
+    "dislikesTech": [
+      53,
+      61,
+      13,
+      36,
+      69
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Student 32",
+    "previousPairs": [
+      45,
+      3
+    ],
+    "likes": [
+      62,
+      21,
+      19,
+      38,
+      24,
+      29,
+      20,
+      5
+    ],
+    "dislikesPers": [
+      3,
+      44,
+      52,
+      68,
+      18
+    ],
+    "dislikesTech": [
+      10,
+      36,
+      64,
+      55,
+      39,
+      40
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Student 33",
+    "previousPairs": [
+      48,
+      58,
+      56,
+      67,
+      20,
+      35,
+      18,
+      54,
+      32
+    ],
+    "likes": [
+      18,
+      32,
+      60
+    ],
+    "dislikesPers": [],
+    "dislikesTech": [
+      25,
+      43
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Student 34",
+    "previousPairs": [
+      63,
+      35,
+      55,
+      58,
+      48,
+      21,
+      45,
+      61
+    ],
+    "likes": [
+      30,
+      43,
+      38,
+      57,
+      61,
+      52
+    ],
+    "dislikesPers": [
+      28,
+      8,
+      53,
+      11,
+      36
+    ],
+    "dislikesTech": [
+      42,
+      62,
+      24,
+      68
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Student 35",
+    "previousPairs": [
+      66,
+      2,
+      36,
+      19,
+      59,
+      28,
+      23
+    ],
+    "likes": [
+      64
+    ],
+    "dislikesPers": [],
+    "dislikesTech": [
+      33,
+      41,
+      28,
+      63,
+      16
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Student 36",
+    "previousPairs": [
+      3,
+      9,
+      42,
+      0,
+      61,
+      43,
+      56,
+      45,
+      34
+    ],
+    "likes": [
+      43,
+      41,
+      0,
+      11
+    ],
+    "dislikesPers": [
+      9,
+      57
+    ],
+    "dislikesTech": [
+      44,
+      52,
+      49
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Student 37",
+    "previousPairs": [
+      33,
+      60
+    ],
+    "likes": [
+      28,
+      14,
+      17,
+      13,
+      19,
+      50,
+      18
+    ],
+    "dislikesPers": [
+      5,
+      51,
+      12,
+      59,
+      3,
+      64
+    ],
+    "dislikesTech": [
+      15,
+      43,
+      26,
+      55,
+      8
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Student 38",
+    "previousPairs": [
+      59,
+      47,
+      29,
+      61,
+      49,
+      4,
+      6,
+      15,
+      5,
+      2,
+      66
+    ],
+    "likes": [
+      68
+    ],
+    "dislikesPers": [
+      64
+    ],
+    "dislikesTech": [
+      40,
+      28,
+      56,
+      5,
+      29,
+      36,
+      41
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Student 39",
+    "previousPairs": [
+      32,
+      64,
+      25,
+      49
+    ],
+    "likes": [
+      4,
+      23,
+      26,
+      48,
+      45,
+      19,
+      37,
+      35,
+      17,
+      40
+    ],
+    "dislikesPers": [
+      58,
+      55,
+      33,
+      7
+    ],
+    "dislikesTech": [
+      18,
+      2,
+      46,
+      47,
+      52,
+      24
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Student 40",
+    "previousPairs": [
+      16,
+      34,
+      30
+    ],
+    "likes": [
+      53,
+      36,
+      20,
+      38,
+      25,
+      29
+    ],
+    "dislikesPers": [
+      23
+    ],
+    "dislikesTech": [
+      42,
+      5
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Student 41",
+    "previousPairs": [
+      14,
+      68,
+      6,
+      26,
+      31,
+      56
+    ],
+    "likes": [
+      39,
+      62
+    ],
+    "dislikesPers": [
+      4
+    ],
+    "dislikesTech": []
+  },
+  {
+    "id": 42,
+    "name": "Student 42",
+    "previousPairs": [
+      19,
+      32,
+      45,
+      49
+    ],
+    "likes": [
+      64,
+      46,
+      13,
+      5,
+      54,
+      2,
+      21,
+      25
+    ],
+    "dislikesPers": [
+      26,
+      30,
+      48,
+      22
+    ],
+    "dislikesTech": [
+      28,
+      58,
+      17,
+      34,
+      24,
+      20,
+      32
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Student 43",
+    "previousPairs": [
+      64,
+      53,
+      12,
+      38,
+      62,
+      63,
+      57,
+      65,
+      23,
+      27
+    ],
+    "likes": [
+      47,
+      2,
+      28,
+      35
+    ],
+    "dislikesPers": [
+      54,
+      64
+    ],
+    "dislikesTech": []
+  },
+  {
+    "id": 44,
+    "name": "Student 44",
+    "previousPairs": [
+      69,
+      16,
+      8,
+      59,
+      9,
+      48,
+      54,
+      50,
+      35,
+      49,
+      51
+    ],
+    "likes": [
+      21,
+      66,
+      7,
+      27,
+      28,
+      22,
+      65
+    ],
+    "dislikesPers": [
+      26,
+      34,
+      64,
+      67
+    ],
+    "dislikesTech": [
+      9,
+      5,
+      31
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Student 45",
+    "previousPairs": [],
+    "likes": [
+      66,
+      40,
+      53
+    ],
+    "dislikesPers": [
+      64,
+      13,
+      33,
+      36
+    ],
+    "dislikesTech": [
+      38,
+      56,
+      22,
+      68,
+      9,
+      8,
+      44
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Student 46",
+    "previousPairs": [
+      62,
+      40,
+      20,
+      12
+    ],
+    "likes": [
+      49,
+      44
+    ],
+    "dislikesPers": [
+      1,
+      22,
+      56,
+      21
+    ],
+    "dislikesTech": []
+  },
+  {
+    "id": 47,
+    "name": "Student 47",
+    "previousPairs": [
+      14,
+      45,
+      17,
+      65,
+      0,
+      22,
+      29,
+      1,
+      4
+    ],
+    "likes": [
+      63,
+      37,
+      53,
+      17,
+      34
+    ],
+    "dislikesPers": [],
+    "dislikesTech": [
+      51,
+      58,
+      25,
+      6,
+      4,
+      32,
+      41
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Student 48",
+    "previousPairs": [],
+    "likes": [
+      66,
+      11,
+      50
+    ],
+    "dislikesPers": [
+      46,
+      20,
+      33,
+      6,
+      63
+    ],
+    "dislikesTech": [
+      53,
+      28,
+      47,
+      65,
+      19,
+      13,
+      30
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Student 49",
+    "previousPairs": [
+      60,
+      6,
+      65,
+      27,
+      46
+    ],
+    "likes": [],
+    "dislikesPers": [
+      61,
+      63
+    ],
+    "dislikesTech": [
+      36,
+      44
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Student 50",
+    "previousPairs": [
+      38,
+      49,
+      66,
+      25
+    ],
+    "likes": [
+      59,
+      65,
+      45,
+      12,
+      55,
+      41,
+      68,
+      7,
+      10
+    ],
+    "dislikesPers": [],
+    "dislikesTech": [
+      48
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Student 51",
+    "previousPairs": [
+      49,
+      11,
+      2
+    ],
+    "likes": [
+      47,
+      37,
+      4,
+      52,
+      20,
+      1,
+      3,
+      64,
+      22
+    ],
+    "dislikesPers": [
+      44,
+      42,
+      30,
+      63,
+      27,
+      54
+    ],
+    "dislikesTech": [
+      45,
+      36,
+      68,
+      59
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Student 52",
+    "previousPairs": [],
+    "likes": [
+      1,
+      3,
+      43,
+      12,
+      41,
+      65,
+      63,
+      15
+    ],
+    "dislikesPers": [],
+    "dislikesTech": [
+      60,
+      36
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Student 53",
+    "previousPairs": [
+      31,
+      42,
+      58,
+      1
+    ],
+    "likes": [
+      17,
+      25,
+      20,
+      33,
+      50,
+      19
+    ],
+    "dislikesPers": [
+      30,
+      27,
+      67,
+      5,
+      59,
+      51,
+      61
+    ],
+    "dislikesTech": [
+      10,
+      36,
+      64,
+      0,
+      43
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Student 54",
+    "previousPairs": [
+      9,
+      29,
+      47,
+      51,
+      25,
+      33,
+      35,
+      20,
+      52,
+      12
+    ],
+    "likes": [
+      13,
+      60,
+      15,
+      58,
+      16,
+      8,
+      35
+    ],
+    "dislikesPers": [
+      57
+    ],
+    "dislikesTech": []
+  },
+  {
+    "id": 55,
+    "name": "Student 55",
+    "previousPairs": [],
+    "likes": [
+      29
+    ],
+    "dislikesPers": [],
+    "dislikesTech": [
+      51,
+      6
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Student 56",
+    "previousPairs": [
+      55,
+      24,
+      54,
+      12,
+      52,
+      35,
+      31,
+      22,
+      40,
+      67
+    ],
+    "likes": [
+      16,
+      6,
+      47,
+      46,
+      39,
+      37,
+      15,
+      61
+    ],
+    "dislikesPers": [
+      53,
+      26,
+      12
+    ],
+    "dislikesTech": [
+      3,
+      52,
+      9,
+      28,
+      62,
+      33,
+      44
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Student 57",
+    "previousPairs": [
+      31,
+      43,
+      7,
+      47,
+      17,
+      11,
+      45
+    ],
+    "likes": [
+      46,
+      14,
+      4
+    ],
+    "dislikesPers": [
+      42,
+      9,
+      54
+    ],
+    "dislikesTech": [
+      49,
+      34,
+      69,
+      45,
+      58
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Student 58",
+    "previousPairs": [
+      36,
+      21,
+      1,
+      65,
+      41,
+      23,
+      20,
+      24,
+      55,
+      34
+    ],
+    "likes": [
+      12,
+      30,
+      29,
+      36,
+      24,
+      33,
+      52,
+      68,
+      55
+    ],
+    "dislikesPers": [
+      13,
+      23,
+      67,
+      16,
+      9,
+      54,
+      65
+    ],
+    "dislikesTech": [
+      11,
+      57,
+      2,
+      62,
+      48
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Student 59",
+    "previousPairs": [
+      45,
+      1,
+      64
+    ],
+    "likes": [
+      3
+    ],
+    "dislikesPers": [
+      66,
+      43,
+      45,
+      17,
+      44
+    ],
+    "dislikesTech": [
+      52,
+      38,
+      16
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Student 60",
+    "previousPairs": [
+      59,
+      33,
+      8,
+      36,
+      24
+    ],
+    "likes": [
+      55
+    ],
+    "dislikesPers": [
+      36,
+      18
+    ],
+    "dislikesTech": [
+      62,
+      44,
+      14
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Student 61",
+    "previousPairs": [
+      1,
+      46,
+      33
+    ],
+    "likes": [],
+    "dislikesPers": [],
+    "dislikesTech": [
+      50,
+      4,
+      60,
+      23
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Student 62",
+    "previousPairs": [
+      60,
+      19,
+      33,
+      49,
+      9
+    ],
+    "likes": [
+      22,
+      57,
+      8,
+      47,
+      37,
+      48,
+      50,
+      33
+    ],
+    "dislikesPers": [
+      27,
+      59,
+      9,
+      17
+    ],
+    "dislikesTech": [
+      1,
+      40,
+      32,
+      25,
+      34,
+      24
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Student 63",
+    "previousPairs": [
+      18,
+      49,
+      2
+    ],
+    "likes": [
+      48,
+      24,
+      45,
+      64,
+      11
+    ],
+    "dislikesPers": [],
+    "dislikesTech": [
+      39,
+      20,
+      17,
+      9,
+      32,
+      28,
+      61
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Student 64",
+    "previousPairs": [
+      7,
+      41,
+      60,
+      13,
+      66
+    ],
+    "likes": [
+      36,
+      50,
+      45,
+      10,
+      11
+    ],
+    "dislikesPers": [],
+    "dislikesTech": [
+      57,
+      4,
+      0,
+      21,
+      32,
+      53,
+      15
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Student 65",
+    "previousPairs": [
+      39,
+      0,
+      45,
+      35,
+      6,
+      55
+    ],
+    "likes": [
+      30,
+      28,
+      51,
+      11,
+      8
+    ],
+    "dislikesPers": [
+      16,
+      42
+    ],
+    "dislikesTech": [
+      31,
+      55
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Student 66",
+    "previousPairs": [
+      33,
+      53,
+      57,
+      68,
+      22,
+      11,
+      4,
+      34,
+      41,
+      54,
+      37
+    ],
+    "likes": [
+      47,
+      27,
+      7,
+      4,
+      42,
+      69,
+      41,
+      58,
+      18
+    ],
+    "dislikesPers": [
+      3,
+      31,
+      54,
+      36,
+      22
+    ],
+    "dislikesTech": [
+      6,
+      29,
+      13
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Student 67",
+    "previousPairs": [
+      32,
+      12
+    ],
+    "likes": [],
+    "dislikesPers": [],
+    "dislikesTech": [
+      16,
+      68,
+      10,
+      44
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Student 68",
+    "previousPairs": [
+      28,
+      40,
+      43,
+      62,
+      39
+    ],
+    "likes": [
+      37,
+      3,
+      65,
+      34,
+      12,
+      22,
+      33,
+      23,
+      20
+    ],
+    "dislikesPers": [
+      51,
+      28,
+      17,
+      53
+    ],
+    "dislikesTech": [
+      1,
+      58,
+      21,
+      62,
+      36
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Student 69",
+    "previousPairs": [
+      58,
+      68
+    ],
+    "likes": [
+      24,
+      61
+    ],
+    "dislikesPers": [
+      6,
+      57,
+      52,
+      64,
+      50,
+      35,
+      36
+    ],
+    "dislikesTech": [
+      19,
+      48,
+      4,
+      37
+    ]
+  }
+]

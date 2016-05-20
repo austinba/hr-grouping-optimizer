@@ -6,6 +6,7 @@ const util = {
 	formatStringLen: (str, len) => (str + Array(len+1).join(' ')).slice(0, len),
 	dropRandomItemFromArray: arr => arr.splice(Math.floor(arr.length * Math.random()),1)[0],
 	dropNRandomItemsFromArray: (arr, n) => util.range(n).map(() => util.dropRandomItemFromArray(arr)),
-	forEachDefined: (arr, callback) => arr.forEach((item, key) => {if(item!==undefined) callback(item,key);})
+	forEachDefined: (arr, callback) => arr.forEach((item, key) => {if(item!==undefined) callback(item,key);}),
+	deepCopyArray: arr => arr.map(item => !Array.isArray(item) ? item : util.deepCopyArray(item))
 }
 module.exports = util;

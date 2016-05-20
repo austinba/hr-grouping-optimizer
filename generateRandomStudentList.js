@@ -4,14 +4,21 @@ const groupSize = 4;
 const classSize = 70;
 
 const generateRandomPreferences = function() {
-
 	// Generate students list with random preferences (replace with import)
-	const studentNames = util.range(70).map(i => 'Student ' + i);
-	const studentPrefs = studentNames.map(() => ({}));
-	let unassignedStudents = studentNames.slice();
-	studentPrefs.forEach((student, index) => {
-		studentPrefs[i].likes = util.dropNRandomItemsFromArray(unassignedStudents, util.randInt(11));
+	const studentIds = util.range(70);
+	const studentNames = studentIds.map(i => 'Student ' + i);
+	const studentPrefs = studentNames.map((name,id)=> ({id, name}));
+
+	studentPrefs.forEach(student => {
+		let unassignedStudents = studentIds.slice();
+		const thisStudentId = unassignedStudents.indexOf(student.id);
+		if(thisStudentId>=0) unassignedStudents.splice(thisStudentId,1); // don't pick current student
+		student.previousPairs = util.dropNRandomItemsFromArray(unassignedStudents.slice(), util.randInt(12)); // prev pair can be on other lists
+		student.likes = util.dropNRandomItemsFromArray(unassignedStudents, util.randInt(11));
+		student.dislikesPers = util.dropNRandomItemsFromArray(unassignedStudents, util.randInt(8));
+		student.dislikesTech = util.dropNRandomItemsFromArray(unassignedStudents, util.randInt(8));
 	})
-	// console.log(studentPrefs);
+	return studentPrefs;
 };
-generateRandomPreferences(studentPrefs);
+let prefs = generateRandomPreferences();
+console.log(JSON.stringify(prefs, null, 2))

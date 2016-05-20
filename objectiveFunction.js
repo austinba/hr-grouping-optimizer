@@ -4,11 +4,10 @@ const forAStudentTowardAGroup = function(student, group) {
 	let points = 0;
 	util.forEachDefined(group, otherStudent => {
 		if(otherStudent !== undefined && student !== otherStudent) {
-			if(student.preferences.likes.indexOf(otherStudent.name) >= 0) points += 1;
-			if(student.preferences.dislikesPers.indexOf(otherStudent.name) >= 0) points -= 2;
-			if(student.preferences.dislikesTech.indexOf(otherStudent.name) >= 0) points -= 2;
-			if(student.preferences.previousPairs.indexOf(otherStudent.name) >= 0) points -= 0.5;
-			console.log(points);
+			if(student.likes.indexOf(otherStudent.id) >= 0) points += 1;
+			if(student.dislikesPers.indexOf(otherStudent.id) >= 0) points -= 2;
+			if(student.dislikesTech.indexOf(otherStudent.id) >= 0) points -= 2;
+			if(student.previousPairs.indexOf(otherStudent.id) >= 0) points -= 0.5;
 		}
 	});
 	return points;
@@ -20,7 +19,7 @@ const forAGroup = function(group) {
 	});
 	return points;
 }
-const forAGroupConfiguration = function(groupsArray) {
+const forAGroupConfig = function(groupsArray) {
 	let points = 0;
 	groupsArray.forEach(group => {
 		points += this.forAGroup(group);
@@ -30,4 +29,4 @@ const forAGroupConfiguration = function(groupsArray) {
 
 exports.forAStudentTowardAGroup = forAStudentTowardAGroup;
 exports.forAGroup = forAGroup;
-exports.forAGroupConfiguration = forAGroupConfiguration;
+exports.forAGroupConfig = forAGroupConfig;
