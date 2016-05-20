@@ -1,4 +1,4 @@
-# Preferenced-Based Group Optimizer
+# Team Grouping Optimizer
 This is an optimizer for grouping students based on preferences.  This uses a simulated annealing algorithm.
 
 ## Files
