@@ -1,7 +1,7 @@
 'use strict';
 const util = require('./util');
 const objFn = require('./objectiveFunction');
-const parse = require('./parseGroupings');
+const display = require('./displayGroupings');
 
 // Group Parameters
 const students = require('./exampleStudentLists/average.json')
@@ -22,7 +22,7 @@ const main = function(runCount, students, groupSize) {
 		console.log('\n');
 	}
 	groupingOptions = groupingOptions.sort((groupingA, groupingB) => objFn.forAGrouping(groupingB)-objFn.forAGrouping(groupingA));
-	parse.allGroupings(groupingOptions);
+	display.allGroupings(groupingOptions);
 }
 
 // OPTIMIZER inputs: 'students' array of preferences and 'groupSize'

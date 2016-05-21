@@ -3,7 +3,7 @@ const objFn = require('./objectiveFunction');
 const util = require('./util.js');
 const columnWidth = 16;
 
-const parseAllGroupingOptions = function(groupingOptions) {
+const displayAllGroupingOptions = function(groupingOptions) {
 		// Pretty headers & footers for output
 	console.log('\n\n');
 	console.log('+==========================================================================================================================+');
@@ -13,12 +13,12 @@ const parseAllGroupingOptions = function(groupingOptions) {
 		console.log('============================================================================================================================');
 		console.log('=============================================== Grouping ' + util.formatStringLen(i+1, 2) + 
 			'(' + util.formatStringLen(objFn.forAGrouping(grouping)+0.0001, 4) + ' Points) ===================================================');
-		console.log(parseGrouping(grouping));
+		console.log(displayGrouping(grouping));
 	console.log('============================================================================================================================\n\n');
 	});
 }
-// PARSE GROUPING: Display groupings in an intelligible way
-const parseGrouping = function(grouping) {
+// DISPLAY GROUPING: Display groupings in an intelligible way
+const displayGrouping = function(grouping) {
 	const headers = ['GROUP', 'STUDENT', 'STUDENT ID', '#PREV PAIRS', '#LIKES', '#DISLIKES TECH', '#DISLIKES PERS'];
 	const separator = headers.map(() => '------------------------')
 	const table = [];
@@ -61,5 +61,5 @@ const countInGroup = function(student, group, category) {
 	});
 	return count;
 }
-module.exports.allGroupings = parseAllGroupingOptions;
-module.exports.singleGrouping = parseGrouping;
+module.exports.allGroupings = displayAllGroupingOptions;
+module.exports.singleGrouping = displayGrouping;
