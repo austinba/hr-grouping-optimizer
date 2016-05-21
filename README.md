@@ -16,7 +16,7 @@ node main.js > output
 ## Files
 * **main.js** -- Application entry point
 * **objectiveFunction.js** -- Objective function (contains weightings)
-* **parseGroupings.js** -- Formats output into tables
+* **displayGroupings.js** -- Formats output into tables
 * **util.js** -- Misc utility functions
 * **generateARandomStudentList.js** -- Produces a sample JSON input file for testing (see *Input*)
 * **exampleStudentLists** -- Folder of sample JSON input files for testing
