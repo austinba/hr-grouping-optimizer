@@ -21,7 +21,7 @@ const main = function(runCount, students, groupSize) {
 		groupingOptions.push(optimizer(students, groupSize));
 		console.log('\n');
 	}
-	groupingOptions = groupingOptions.sort((groupingA, groupingB) => objFn.forAGrouping(groupingA)<objFn.forAGrouping(groupingB));
+	groupingOptions = groupingOptions.sort((groupingA, groupingB) => objFn.forAGrouping(groupingB)-objFn.forAGrouping(groupingA));
 	parse.allGroupings(groupingOptions);
 }
 

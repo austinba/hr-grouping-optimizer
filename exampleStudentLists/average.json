@@ -2,37 +2,26 @@
   {
     "id": 0,
     "name": "Student 0",
-    "previousPairs": [11,46,50,56,20,1,60,49,57,68,19,63
-    ],
-    "likes": [47,20,61
-    ],
-    "dislikesPers": [24,11,4,32,14,45,64
-    ],
-    "dislikesTech": [38,7,46,21,9,13
-    ]
+    "previousPairs": [11,46,50,56,20,1,60,49,57,68,19,63],
+    "likes": [47,20,61],
+    "dislikesPers": [24,11,4,32,14,45,64],
+    "dislikesTech": [38,7,46,21,9,13]
   },
   {
     "id": 1,
     "name": "Student 1",
-    "previousPairs": [29,32,4,48,23,43,49,0,11,54,41,16
-    ],
-    "likes": [13
-    ],
+    "previousPairs": [29,32,4,48,23,43,49,0,11,54,41,16],
+    "likes": [13],
     "dislikesPers": [],
-    "dislikesTech": [16
-    ]
+    "dislikesTech": [16]
   },
   {
     "id": 2,
     "name": "Student 2",
-    "previousPairs": [28,11,27,37,65,23,31,6,36,41,16,1
-    ],
-    "likes": [61
-    ],
-    "dislikesPers": [42,30,6,46,15,28,59
-    ],
-    "dislikesTech": [24,13,67,49,64,12,60
-    ]
+    "previousPairs": [28,11,27,37,65,23,31,6,36,41,16,1],
+    "likes": [61],
+    "dislikesPers": [42,30,6,46,15,28,59],
+    "dislikesTech": [24,13,67,49,64,12,60]
   },
   {
     "id": 3,
