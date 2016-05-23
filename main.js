@@ -2,9 +2,11 @@
 const util = require('./util');
 const objFn = require('./objectiveFunction');
 const display = require('./displayGroupings');
+const loadFile = require('./parseInput.js');
 
 // Group Parameters
-const students = require('./exampleStudentLists/average.json')
+const studentsCSV = 'dataCSVs/template.csv';
+// const students = require('./exampleStudentLists/average.json')
 const groupSize = 4;
 
 // Optimization Parameters
@@ -113,4 +115,4 @@ const randomlySwapTwoStudentsFromDifferentGroups = function(grouping, currentTem
 }
 
 // Run the optimizer
-main(runCount, students, groupSize);
+main(runCount, loadFile(studentsCSV), groupSize);
