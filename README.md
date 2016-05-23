@@ -24,20 +24,24 @@ node main.js > output
 ## Configuration
 ### main.js
 ```
-// Group Parameters
-const students = require('./exampleStudentLists/average.json')
-const groupSize = 4;
-
 // Optimization Parameters
 const startTemp = 350;      // Default: 350
 const endTemp = 5;          // Default: 5
 const iterations = 100000;  // Default: 100000
-const runCount = 3;         // Default: 3
+
+const main = function() {
+    // Grouping Parameters
+    const studentsCSV = 'dataCSVs/origTemplate.csv';
+    const groupSize = 4;
+    const runCount = 3;
+    optimizeMultipleGroups(runCount, loadFile(studentsCSV), groupSize);
+}
+
 ```
 
-**students** refers to the the JSON file, which contains the list of students and their preferences.  Format instructions are listed under *Input*.
+**studentsCSV** the the CSV file, which contains the list of students and their preferences.
 
-**groupSize** refers to the maximum group size (odd-one-out groups may have n-1 group sizee)
+**groupSize** is the maximum group size (odd-one-out groups may have n-1 group sizee)
 
 **Optimization Parameters** These are optimized for the objective function weightings used in the example. Optimization can be refreshed by running an expanded temperature range on a dataset, and noting the temperature range where the most point jumps occur.
 

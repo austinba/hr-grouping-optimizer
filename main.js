@@ -4,19 +4,21 @@ const objFn = require('./objectiveFunction');
 const display = require('./displayGroupings');
 const loadFile = require('./parseInput.js');
 
-// Group Parameters
-const studentsCSV = 'dataCSVs/template.csv';
-// const students = require('./exampleStudentLists/average.json')
-const groupSize = 4;
-
 // Optimization Parameters
 const startTemp = 350;      // Default: 350
 const endTemp = 5;          // Default: 5
 const iterations = 100000;  // Default: 100000
-const runCount = 3;         // Default: 3
 
-// MAIN runs the optimizer multiple times to create a set of groupings to choose from
-const main = function(runCount, students, groupSize) {
+const main = function() {
+	// Grouping Parameters
+	const studentsCSV = 'dataCSVs/origTemplate.csv';
+	const groupSize = 4;
+	const runCount = 3;
+	optimizeMultipleGroups(runCount, loadFile(studentsCSV), groupSize);
+}
+
+// OPTIMIZE MULTIPLE GROUPS runs the optimizer multiple times to create a set of groupings to choose from
+const optimizeMultipleGroups = function(runCount, students, groupSize) {
 	let groupingOptions = [];
 	for(let i=0; i<runCount; i++) {
 		console.log('Generating Grouping Option (' + (i+1) + ' of ' + runCount + ')');
@@ -114,5 +116,5 @@ const randomlySwapTwoStudentsFromDifferentGroups = function(grouping, currentTem
   }
 }
 
-// Run the optimizer
-main(runCount, loadFile(studentsCSV), groupSize);
+// Run
+main();

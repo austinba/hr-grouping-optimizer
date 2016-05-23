@@ -13,7 +13,7 @@ const forAStudentTowardAGroup = function(student, group) {
 			if(student.likes.indexOf(otherStudent.id) >= 0) points += pointsForLike;
 			if(student.dislikesPers.indexOf(otherStudent.id) >= 0) points += pointsForDislikePers;
 			if(student.dislikesTech.indexOf(otherStudent.id) >= 0) points += pointsForDislikeTech;
-			if(student.previousPairs.indexOf(otherStudent.id) >= 0) points += pointsForPreviousPairs;
+//			if(student.previousPairs.indexOf(otherStudent.id) >= 0) points += pointsForPreviousPairs;
 		}
 	});
 	return points;

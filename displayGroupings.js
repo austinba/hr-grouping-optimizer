@@ -6,20 +6,20 @@ const columnWidth = 16;
 const displayAllGroupingOptions = function(groupingOptions) {
 		// Pretty headers & footers for output
 	console.log('\n\n');
-	console.log('+==========================================================================================================================+');
-	console.log('+                                           GROUPING OPTIONS (SORTED BY POINTS)                                            +');
-	console.log('+==========================================================================================================================+\n');
+	console.log('+========================================================================================================+');
+	console.log('+                                  GROUPING OPTIONS (SORTED BY POINTS)                                   +');
+	console.log('+========================================================================================================+\n');
 	groupingOptions.forEach((grouping, i) => {
-		console.log('============================================================================================================================');
+		console.log('==========================================================================================================');
 		console.log('=============================================== Grouping ' + util.formatStringLen(i+1, 2) + 
-			'(' + util.formatStringLen(objFn.forAGrouping(grouping)+0.0001, 4) + ' Points) ===================================================');
+			'(' + util.formatStringLen(objFn.forAGrouping(grouping)+0.0001, 4) + ' Points) =================================');
 		console.log(displayGrouping(grouping));
-	console.log('============================================================================================================================\n\n');
+	console.log('==========================================================================================================\n\n');
 	});
 }
 // DISPLAY GROUPING: Display groupings in an intelligible way
 const displayGrouping = function(grouping) {
-	const headers = ['GROUP', 'STUDENT', 'STUDENT ID', '#PREV PAIRS', '#LIKES', '#DISLIKES TECH', '#DISLIKES PERS'];
+	const headers = ['GROUP', 'STUDENT', 'STUDENT ID', '#LIKES', '#DISLIKES TECH', '#DISLIKES PERS'];
 	const separator = headers.map(() => '------------------------')
 	const table = [];
 	table.push(headers);
@@ -38,12 +38,12 @@ const displayGrouping = function(grouping) {
 			row.push(student.name);
 			row.push(student.id);
 
-			const nPrevPairs = countInGroup(student, group, 'previousPairs');
+//	 		const nPrevPairs = countInGroup(student, group, 'previousPairs');
 			const nLikes = countInGroup(student, group, 'likes');
 			const nDislikesTech = countInGroup(student, group, 'dislikesTech');
 			const nDislikesPers = countInGroup(student, group, 'dislikesPers');
 
-			row.push((nPrevPairs || '-') + ' / ' + (student.previousPairs.length || '-'));
+//			row.push((nPrevPairs || '-') + ' / ' + (student.previousPairs.length || '-'));
 			row.push((nLikes || '-') + ' / ' + (student.likes.length || '-'));
 			row.push((nDislikesTech || '-') + ' / ' + (student.dislikesTech.length || '-'));
 			row.push((nDislikesPers || '-') + ' / ' + (student.dislikesPers.length || '-'));

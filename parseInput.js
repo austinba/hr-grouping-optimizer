@@ -21,7 +21,7 @@ const loadFile = function(path) {
 		console.error('Error converting CSV for file', '"'+path+'"');
 		return [];
 	}
-	
+
 	// Find beginning and end of dataset and truncate contents[] to those rows
 	let row = 0;
 	while(contents[row][0] === '') {
@@ -95,6 +95,3 @@ function CSVToArray( strData, strDelimiter ){
 
 
 module.exports = loadFile;
-
-console.log(
-	loadFile('dataCSVs/template - Copy.csv'));
